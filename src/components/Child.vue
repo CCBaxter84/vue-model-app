@@ -3,11 +3,10 @@
     <h3>Child</h3>
     <button @click="incrementCount"
             class="button">
-      Click Me
+      Increment
     </button>
     <article class="is-flex">
-      <p>Count: </p>
-      <p>{{ count }}</p>
+      <p>{{ `Count is ${count}` }}</p>
     </article>
   </div>
 </template>
@@ -21,18 +20,18 @@
 //   props.count++
 // }
 
-// const props = defineProps({
-//   count: Number
-// })
-// const emit = defineEmits(['update:count'])
-
-// function incrementCount() {
-//   emit('update:count', props.count + 1)
-// }
-
-let count = defineModel('count')
+const props = defineProps({
+  count: Number
+})
+const emit = defineEmits(['update:count'])
 
 function incrementCount() {
-  count.value++
+  emit('update:count', props.count + 1)
 }
+
+// let count = defineModel('count')
+
+// function incrementCount() {
+//   count.value++
+// }
 </script>
