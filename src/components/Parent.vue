@@ -1,10 +1,8 @@
 <template>
   <div>
-    <h2>Parent</h2>
     <article class="is-flex">
-      <p>{{ `Count is ${count}` }}</p>
+      <p>{{ `Parent Count is ${count}` }}</p>
     </article>
-    <br>
     <Child  :count="count"
             @update:count="incrementCount"/>
     <!-- <Child v-model:count="count"/> -->

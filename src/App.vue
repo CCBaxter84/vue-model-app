@@ -1,8 +1,9 @@
 <template>
-  <header style="background-color: aliceblue; border-radius: 8px;">
+  <header>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <h1>Vue</h1>
   </header>
   <main>
     <Parent />

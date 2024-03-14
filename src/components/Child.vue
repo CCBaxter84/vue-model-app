@@ -1,12 +1,11 @@
 <template>
   <div>
-    <h3>Child</h3>
     <button @click="incrementCount"
             class="button">
       Increment
     </button>
     <article class="is-flex">
-      <p>{{ `Count is ${count}` }}</p>
+      <p>{{ `Child Count is ${count}` }}</p>
     </article>
   </div>
 </template>
